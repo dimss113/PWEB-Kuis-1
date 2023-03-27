@@ -1,0 +1,373 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Brighton Times</title>
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <style>
+    /* I used a font-awesome icon so for codepen I had to add styles here */
+    .fa-bars {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .fa-bars {
+        float: right;
+        color: gray;
+        padding: 1em .5em;
+        font-size: 2em;
+        line-height: 1.2em;
+        display: flex;
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (min-width:427px) and (max-width:600px) {
+      .fa-bars {
+        font-size: 2.6em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <!-- <img class="header__logo" src="https://s17.postimg.cc/i3kjs8kxb/city.png" alt="iconic view of a cityscape"><a class="menu"><i class="fas fa-bars"></i></a> -->
+      <h1 class="header__title">
+        THE D News
+      </h1>
+    </div>
+  </header>
+
+  <nav id="drawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">News</a></li>
+      <li class="nav__item"><a href="#">Events</a></li>
+      <li class="nav__item"><a href="#">Culture</a></li>
+      <li class="nav__item"><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="content">
+      <section class="news top-news">
+        <h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2>
+        <ul>
+          <li class="top-news__item">
+            <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quam quia corporis, ducimus
+              voluptatem veritatis consequatur. Facere doloribus nemo fuga natus laborum sit, minus, vel cupiditate
+              reprehenderit ipsum maiores distinctio!</a>
+          </li>
+          <li class="top-news__item">
+            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto doloremque totam neque hic natus
+              vero laudantium, voluptatem quod aliquid quas quaerat dicta harum. Repellendus, omnis commodi! Corporis
+              quas deleniti dolor?.</a>
+          </li>
+          <li class="top-news__item">
+            <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque illum itaque quasi
+              velit expedita officiis veritatis molestiae saepe culpa ducimus, ab quo perferendis. Deleniti doloribus
+              quasi odit fugiat aperiam.</a>
+          </li>
+          <li class="top-news__item">
+            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis perferendis laudantium quo
+              recusandae ipsum sapiente doloribus, similique, eius accusantium quis eaque, quisquam repellat alias est
+              enim! Incidunt ut iste ea?.</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="scores">
+        <table class="scores__table">
+          <thead>
+            <tr>
+              <th>date</th>
+              <th class="scores__location">location</th>
+              <th>team</th>
+              <th colspan="2">score</th>
+              <th>team</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Friday</td>
+              <td class="scores__location">Brighton</td>
+              <td>Bears</td>
+              <td>95</td>
+              <td class="winner">109</td>
+              <td class="winner">Cubs</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td class="scores__location">Worthington</td>
+              <td class="winner">Otters</td>
+              <td class="winner">3</td>
+              <td>1</td>
+              <td>Cubs</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td class="scores__location">Littlehampton</td>
+              <td class="winner">Wolves</td>
+              <td class="winner">7</td>
+              <td>0</td>
+              <td>Panthers</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td class="scores__location">Portslade</td>
+              <td>Hawks</td>
+              <td>11</td>
+              <td class="winner">12</td>
+              <td class="winner">Capons</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td class="scores__location">Hove</td>
+              <td class="winner">Stags</td>
+              <td class="winner">6</td>
+              <td>2</td>
+              <td>Foxes</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </section>
+
+      <section class="weather">
+        <span class="weather__location">Brighton, UK</span>
+        <span class="weather__desc">Sunny</span>
+        <span class="weather__today">
+          <img class="weather__today__image" src="https://s17.postimg.cc/gad1pvkjz/weather.png"
+            alt="icon of a partially sunny day"><span class="weather__today__temp">13</span><span
+            class="weather__today__deg">&deg;C</span>
+        </span>
+        <ul class="weather__next">
+          <li class="weather__next__item">
+            <span>Mon</span>
+            <img class="weather__next__image" src="https://s17.postimg.cc/jtyzfxfmn/sunny.png"
+              alt="icon of a sunny day">
+            <span>13 &deg;C</span>
+          </li>
+          <li class="weather__next__item">
+            <span>Tues</span>
+            <img class="weather__next__image" src="https://s17.postimg.cc/pi5a6v1zj/cloudy.png"
+              alt="icon of a cloudy day">
+            <span>13 &deg;C</span>
+          </li>
+          <li class="weather__next__item">
+            <span>Wed</span>
+            <img class="weather__next__image" src="https://s17.postimg.cc/pi5a6v1zj/cloudy.png"
+              alt="icon of a cloudy day">
+            <span>13 &deg;C</span>
+          </li>
+          <li class="weather__next__item">
+            <span>Thu</span>
+            <img class="weather__next__image" src="https://s17.postimg.cc/9jwkgri27/rain.png" alt="icon of a rainy day">
+            <span>13 &deg;C</span>
+          </li>
+          <li class="weather__next__item">
+            <span>Fri</span>
+            <img class="weather__next__image" src="https://s17.postimg.cc/jtyzfxfmn/sunny.png"
+              alt="icon of a sunny day">
+            <span>13 &deg;C</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+  </main>
+  <main class="main columns" id="blog">
+
+    <section class="column main-column">
+      <a class="article first-article" href="#">
+        <figure class="article-image is-4by3">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-01-lo.jpg" alt="">
+        </figure>
+        <div class="article-body">
+          <h2 class="article-title">1</h2>
+          <p class="article-content">article-content 1</p>
+          <footer class="article-info">
+            <span>auth</span>
+            <span>comments</span>
+          </footer>
+        </div>
+      </a>
+
+      <div class="columns">
+        <div class="column nested-column">
+          <a class="article" href="#">
+            <figure class="article-image is-16by9">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-02-lo.jpg" alt="">
+            </figure>
+            <div class="article-body">
+              <h2 class="article-title">2</h2>
+              <p class="article-content">article-content 2</p>
+              <footer class="article-info">
+                <span>auth</span>
+                <span>comments</span>
+              </footer>
+            </div>
+          </a>
+        </div>
+
+        <div class="column">
+          <a class="article" href="#">
+            <figure class="article-image is-16by9">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-03-lo.jpg" alt="">
+            </figure>
+            <div class="article-body">
+              <h2 class="article-title">3</h2>
+              <p class="article-content">article-content 3</p>
+              <footer class="article-info">
+                <span>auth</span>
+                <span>comments</span>
+              </footer>
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-body">
+              <h2 class="article-title">4</h2>
+              <p class="article-content">article-content 4</p>
+              <footer class="article-info">
+                <span>auth</span>
+                <span>comments</span>
+              </footer>
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-body">
+              <h2 class="article-title">5</h2>
+              <p class="article-content">article-content 5</p>
+              <footer class="article-info">
+                <span>auth</span>
+                <span>comments</span>
+              </footer>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="column">
+      <a class="article" href="#">
+        <figure class="article-image is-3by2">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/image-04-lo.jpg" alt="">
+        </figure>
+        <div class="article-body">
+          <h2 class="article-title">6</h2>
+          <p class="article-content">article-content 6</p>
+          <footer class="article-info">
+            <span>auth</span>
+            <span>comments</span>
+          </footer>
+        </div>
+      </a>
+      <a class="article" href="#">
+        <div class="article-body">
+          <h2 class="article-title">7</h2>
+          <p class="article-content">article-content 7</p>
+          <footer class="article-info">
+            <span>auth</span>
+            <span>comments</span>
+          </footer>
+        </div>
+      </a>
+      <a class="article" href="#">
+        <div class="article-body">
+          <h2 class="article-title">8</h2>
+          <p class="article-content">article-content 8</p>
+          <footer class="article-info">
+            <span>auth</span>
+            <span>comments</span>
+          </footer>
+        </div>
+      </a>
+      <a class="article" href="#">
+        <div class="article-body">
+          <h2 class="article-title">9</h2>
+          <p class="article-content">article-content 9</p>
+          <footer class="article-info">
+            <span>auth</span>
+            <span>comments</span>
+          </footer>
+        </div>
+      </a>
+    </section>
+
+  </main>
+  <!-- Footer Start -->
+  <div class="footer">
+    <div class="container">
+      <div class="newsletter">
+        <div class="form">
+          <input class="form-control" placeholder="Email here">
+          <button class="btn">Submit</button>
+          <!-- <button class="button-22" role="button">Button 22</button> -->
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="footer-about">
+            <h3>About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non
+              quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus
+              neque id eros. Integer convallis volutpat neque
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-8">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>Popular Categories</h3>
+                <a href="">Marketing</a>
+                <a href="">Seo Service </a>
+                <a href="">Digital Agency</a>
+                <a href="">Make Money</a>
+                <a href="">Blogging</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-link">
+                <h3>Copyrights</h3>
+                <a href="">About us</a>
+                <a href="">Advertising</a>
+                <a href="">Write For Us</a>
+                <a href="">Trademark</a>
+                <a href="">Licencse & Help</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+</body>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
+
+<!-- HTML !-->
